@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria Rondalla Ensemble – Preserving Filipino Musical Heritage</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8B0000',
+                        secondary: '#DAA520'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-amber-50 text-gray-800">
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 border-b border-amber-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="font-['Pacifico'] text-2xl text-primary">Victoria Rondalla</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#instruments" class="text-gray-700 hover:text-primary transition-colors font-medium">Instruments</a>
+                    <a href="#folk-songs" class="text-gray-700 hover:text-primary transition-colors font-medium">Folk Songs</a>
+                    <a href="#chord-charts" class="text-gray-700 hover:text-primary transition-colors font-medium">Chord Charts</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition-colors font-medium">About Us</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition-colors font-medium">Contact</a>
+                </div>
+                <button class="md:hidden w-6 h-6 flex items-center justify-center">
+                    <i class="ri-menu-line text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden" 
+             style="background-image: url('https://readdy.ai/api/search-image?query=Filipino%20rondalla%20ensemble%20musicians%20performing%20traditional%20music%20with%20bandurria%20laud%20octavina%20guitar%20instruments%20on%20stage%2C%20warm%20golden%20lighting%2C%20cultural%20heritage%20performance%2C%20elegant%20concert%20hall%20setting%2C%20traditional%20Filipino%20clothing%2C%20musical%20harmony%2C%20artistic%20composition%20with%20left%20side%20darker%20gradient%20for%20text%20overlay%2C%20professional%20photography&width=1920&height=1080&seq=hero-rondalla&orientation=landscape'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <h1 class="font-['Playfair_Display'] text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Victoria Rondalla Ensemble
+                    </h1>
+                    <p class="text-xl lg:text-2xl mb-8 text-amber-100 font-light">
+                        Preserving Filipino Musical Heritage Through Traditional Instruments and Timeless Folk Songs
+                    </p>
+                    <p class="text-lg mb-10 text-gray-200 leading-relaxed">
+                        Experience the rich cultural tapestry of Filipino music through our authentic Rondalla performances, featuring traditional instruments like Bandurria, Laud, and Octavina from Victoria, Tarlac.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-primary hover:bg-red-800 text-white px-8 py-4 !rounded-button font-semibold transition-all duration-300 transform hover:scale-105 whitespace-nowrap flex items-center gap-3">
+                            <div class="w-5 h-5 flex items-center justify-center">
+                                <i class="ri-music-2-line"></i>
+                            </div>
+                            Explore Instruments
+                        </button>
+                        <button class="bg-secondary hover:bg-yellow-600 text-white px-8 py-4 !rounded-button font-semibold transition-all duration-300 transform hover:scale-105 whitespace-nowrap flex items-center gap-3">
+                            <div class="w-5 h-5 flex items-center justify-center">
+                                <i class="ri-play-circle-line"></i>
+                            </div>
+                            Listen to Folk Songs
+                        </button>
+                        <button class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 !rounded-button font-semibold transition-all duration-300 whitespace-nowrap flex items-center gap-3">
+                            <div class="w-5 h-5 flex items-center justify-center">
+                                <i class="ri-book-open-line"></i>
+                            </div>
+                            Learn Chords
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-['Playfair_Display'] text-4xl font-bold text-primary mb-6">
+                        The Heart of Filipino Musical Tradition
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Rondalla music represents the soul of Filipino cultural expression, weaving together Spanish colonial influences with indigenous musical traditions. Our ensemble from Victoria, Tarlac continues this legacy, preserving centuries-old melodies while introducing them to new generations.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Through our carefully curated performances and educational programs, we celebrate the intricate harmonies created by traditional string instruments, each contributing its unique voice to create the distinctive sound that defines Filipino Rondalla music.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center">
+                            <i class="ri-award-line text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800">Cultural Heritage Preservation</h3>
+                            <p class="text-gray-600">Maintaining authentic Filipino musical traditions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://readdy.ai/api/search-image?query=Traditional%20Filipino%20bamboo%20musical%20instruments%20arranged%20artistically%2C%20bandurria%20laud%20octavina%20guitar%20displayed%20on%20woven%20mat%2C%20warm%20natural%20lighting%2C%20cultural%20heritage%20artifacts%2C%20wooden%20textures%2C%20traditional%20Filipino%20patterns%20background%2C%20museum%20quality%20photography%2C%20artistic%20composition&width=600&height=600&seq=instruments-display&orientation=squarish" 
+                         alt="Traditional Filipino Instruments" 
+                         class="rounded-2xl shadow-2xl object-cover w-full h-96">
+                    <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center">
+                        <i class="ri-music-fill text-primary text-3xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="instruments" class="py-20 bg-gradient-to-b from-amber-50 to-orange-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-['Playfair_Display'] text-4xl font-bold text-primary mb-4">
+                    Traditional Rondalla Instruments
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover the unique characteristics and beautiful sounds of each instrument that creates the harmonious blend of Rondalla music
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="relative mb-6">
+                        <img src="https://readdy.ai/api/search-image?query=Bandurria%20Filipino%20musical%20instrument%20close-up%20detail%2C%20traditional%20wooden%20string%20instrument%20with%20mother%20of%20pearl%20inlays%2C%20warm%20studio%20lighting%2C%20cultural%20heritage%20artifact%2C%20professional%20product%20photography%2C%20elegant%20composition&width=400&height=300&seq=bandurria&orientation=landscape" 
+                             alt="Bandurria" 
+                             class="w-full h-48 object-cover rounded-xl">
+                        <div class="absolute top-4 right-4 w-10 h-10 bg-primary/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i class="ri-play-fill text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-['Playfair_Display'] text-2xl font-bold text-primary mb-3">Bandurria</h3>
+                    <p class="text-gray-600 mb-4">
+                        The soprano voice of the Rondalla, featuring 14 strings that produce bright, melodic tones. Essential for carrying the main melody in traditional Filipino folk songs.
+                    </p>
+                    <div class="flex items-center text-secondary font-medium">
+                        <i class="ri-volume-up-line mr-2"></i>
+                        Listen to Sample
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="relative mb-6">
+                        <img src="https://readdy.ai/api/search-image?query=Laud%20Filipino%20musical%20instrument%20traditional%20string%20instrument%20larger%20than%20bandurria%2C%20wooden%20craftsmanship%20with%20decorative%20rosette%2C%20warm%20studio%20lighting%2C%20cultural%20heritage%20artifact%2C%20professional%20product%20photography&width=400&height=300&seq=laud&orientation=landscape" 
+                             alt="Laud" 
+                             class="w-full h-48 object-cover rounded-xl">
+                        <div class="absolute top-4 right-4 w-10 h-10 bg-primary/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i class="ri-play-fill text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-['Playfair_Display'] text-2xl font-bold text-primary mb-3">Laud</h3>
+                    <p class="text-gray-600 mb-4">
+                        The alto voice providing rich harmonic support with its 16 strings. Larger than the Bandurria, it adds depth and fullness to the ensemble's sound.
+                    </p>
+                    <div class="flex items-center text-secondary font-medium">
+                        <i class="ri-volume-up-line mr-2"></i>
+                        Listen to Sample
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="relative mb-6">
+                        <img src="https://readdy.ai/api/search-image?query=Octavina%20Filipino%20musical%20instrument%20traditional%20string%20instrument%20smaller%20than%20bandurria%2C%20delicate%20wooden%20craftsmanship%2C%20warm%20studio%20lighting%2C%20cultural%20heritage%20artifact%2C%20professional%20product%20photography&width=400&height=300&seq=octavina&orientation=landscape" 
+                             alt="Octavina" 
+                             class="w-full h-48 object-cover rounded-xl">
+                        <div class="absolute top-4 right-4 w-10 h-10 bg-primary/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i class="ri-play-fill text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-['Playfair_Display'] text-2xl font-bold text-primary mb-3">Octavina</h3>
+                    <p class="text-gray-600 mb-4">
+                        The piccolo of the Rondalla, producing the highest pitched sounds. Its 14 strings create brilliant, sparkling tones that add brilliance to melodies.
+                    </p>
+                    <div class="flex items-center text-secondary font-medium">
+                        <i class="ri-volume-up-line mr-2"></i>
+                        Listen to Sample
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="relative mb-6">
+                        <img src="https://readdy.ai/api/search-image?query=Classical%20guitar%20Filipino%20rondalla%20acoustic%20guitar%20wooden%20instrument%2C%20traditional%20craftsmanship%20with%20nylon%20strings%2C%20warm%20studio%20lighting%2C%20cultural%20heritage%20artifact%2C%20professional%20product%20photography&width=400&height=300&seq=guitar&orientation=landscape" 
+                             alt="Guitar" 
+                             class="w-full h-48 object-cover rounded-xl">
+                        <div class="absolute top-4 right-4 w-10 h-10 bg-primary/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i class="ri-play-fill text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-['Playfair_Display'] text-2xl font-bold text-primary mb-3">Guitar</h3>
+                    <p class="text-gray-600 mb-4">
+                        The rhythmic foundation providing chord progressions and bass lines. Essential for maintaining the harmonic structure of traditional Filipino folk music.
+                    </p>
+                    <div class="flex items-center text-secondary font-medium">
+                        <i class="ri-volume-up-line mr-2"></i>
+                        Listen to Sample
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="relative mb-6">
+                        <img src="https://readdy.ai/api/search-image?query=Ukulele%20small%20four%20string%20instrument%20Hawaiian%20origin%20used%20in%20Filipino%20rondalla%2C%20wooden%20craftsmanship%2C%20warm%20studio%20lighting%2C%20cultural%20heritage%20artifact%2C%20professional%20product%20photography&width=400&height=300&seq=ukulele&orientation=landscape" 
+                             alt="Ukulele" 
+                             class="w-full h-48 object-cover rounded-xl">
+                        <div class="absolute top-4 right-4 w-10 h-10 bg-primary/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i class="ri-play-fill text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-['Playfair_Display'] text-2xl font-bold text-primary mb-3">Ukulele</h3>
+                    <p class="text-gray-600 mb-4">
+                        Adding a bright, cheerful tone to the ensemble. Its four strings contribute to the rhythmic accompaniment and melodic embellishments.
+                    </p>
+                    <div class="flex items-center text-secondary font-medium">
+                        <i class="ri-volume-up-line mr-2"></i>
+                        Listen to Sample
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="relative mb-6">
+                        <img src="https://readdy.ai/api/search-image?query=Double%20bass%20upright%20bass%20large%20string%20instrument%20wooden%20craftsmanship%2C%20traditional%20orchestral%20instrument%20used%20in%20Filipino%20rondalla%2C%20warm%20studio%20lighting%2C%20professional%20product%20photography&width=400&height=300&seq=double-bass&orientation=landscape" 
+                             alt="Double Bass" 
+                             class="w-full h-48 object-cover rounded-xl">
+                        <div class="absolute top-4 right-4 w-10 h-10 bg-primary/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i class="ri-play-fill text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-['Playfair_Display'] text-2xl font-bold text-primary mb-3">Double Bass</h3>
+                    <p class="text-gray-600 mb-4">
+                        The foundation of the ensemble, providing deep bass tones that anchor the harmonic structure and give weight to the overall sound.
+                    </p>
+                    <div class="flex items-center text-secondary font-medium">
+                        <i class="ri-volume-up-line mr-2"></i>
+                        Listen to Sample
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="folk-songs" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-['Playfair_Display'] text-4xl font-bold text-primary mb-4">
+                    Traditional Folk Songs & National Anthem
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Experience the beauty of Filipino folk music through our authentic Rondalla arrangements
+                </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-primary to-red-700 rounded-3xl p-8 mb-12 text-white">
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-['Playfair_Display'] text-3xl font-bold mb-4">Lupang Hinirang</h3>
+                        <p class="text-lg mb-6 text-red-100">
+                            Our special arrangement of the Philippine National Anthem, performed with traditional Rondalla instruments in honor of our nation's heritage.
+                        </p>
+                        <div class="flex gap-4">
+                            <button class="bg-white text-primary px-6 py-3 !rounded-button font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap flex items-center gap-2">
+                                <div class="w-5 h-5 flex items-center justify-center">
+                                    <i class="ri-play-fill"></i>
+                                </div>
+                                Play Recording
+                            </button>
+                            <button class="border-2 border-white text-white px-6 py-3 !rounded-button font-semibold hover:bg-white hover:text-primary transition-colors whitespace-nowrap flex items-center gap-2">
+                                <div class="w-5 h-5 flex items-center justify-center">
+                                    <i class="ri-file-music-line"></i>
+                                </div>
+                                View Sheet Music
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="bg-white/10 rounded-2xl p-6 backdrop-blur-sm">
+                            <div class="w-full h-48 bg-white/20 rounded-xl flex items-center justify-center">
+                                <div class="w-16 h-16 bg-white/30 rounded-full flex items-center justify-center">
+                                    <i class="ri-play-fill text-3xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-amber-50 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-4">
+                        <h4 class="font-['Playfair_Display'] text-xl font-bold text-primary">Bahay Kubo</h4>
+                        <button class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                            <i class="ri-play-fill"></i>
+                        </button>
+                    </div>
+                    <p class="text-gray-600 mb-4">A beloved children's song about a traditional Filipino nipa hut and the vegetables grown around it.</p>
+                    <div class="flex items-center gap-4 text-sm text-gray-500">
+                        <span class="flex items-center gap-1">
+                            <i class="ri-time-line"></i>
+                            3:24
+                        </span>
+                        <span class="flex items-center gap-1">
+                            <i class="ri-music-2-line"></i>
+                            Traditional
+                        </span>
+                    </div>
+                </div>
+
+                <div class="bg-amber-50 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-4">
+                        <h4 class="font-['Playfair_Display'] text-xl font-bold text-primary">Leron Leron Sinta</h4>
+                        <button class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                            <i class="ri-play-fill"></i>
+                        </button>
+                    </div>
+                    <p class="text-gray-600 mb-4">A playful folk song about climbing a papaya tree, often sung as a children's game song.</p>
+                    <div class="flex items-center gap-4 text-sm text-gray-500">
+                        <span class="flex items-center gap-1">
+                            <i class="ri-time-line"></i>
+                            2:58
+                        </span>
+                        <span class="flex items-center gap-1">
+                            <i class="ri-music-2-line"></i>
+                            Folk Song
+                        </span>
+                    </div>
+                </div>
+
+                <div class="bg-amber-50 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-4">
+                        <h4 class="font-['Playfair_Display'] text-xl font-bold text-primary">Paru-Parong Bukid</h4>
+                        <button class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                            <i class="ri-play-fill"></i>
+                        </button>
+                    </div>
+                    <p class="text-gray-600 mb-4">A charming song about a butterfly in the field, celebrating the beauty of nature and countryside life.</p>
+                    <div class="flex items-center gap-4 text-sm text-gray-500">
+                        <span class="flex items-center gap-1">
+                            <i class="ri-time-line"></i>
+                            3:12
+                        </span>
+                        <span class="flex items-center gap-1">
+                            <i class="ri-music-2-line"></i>
+                            Nature Song
+                        </span>
+                    </div>
+                </div>
+
+                <div class="bg-amber-50 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-4">
+                        <h4 class="font-['Playfair_Display'] text-xl font-bold text-primary">Atin Cu Pung Singsing</h4>
+                        <button class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                            <i class="ri-play-fill"></i>
+                        </button>
+                    </div>
+                    <p class="text-gray-600 mb-4">A traditional Kapampangan folk song about a lost ring, showcasing regional Filipino musical heritage.</p>
+                    <div class="flex items-center gap-4 text-sm text-gray-500">
+                        <span class="flex items-center gap-1">
+                            <i class="ri-time-line"></i>
+                            4:05
+                        </span>
+                        <span class="flex items-center gap-1">
+                            <i class="ri-music-2-line"></i>
+                            Regional
+                        </span>
+                    </div>
+                </div>
+
+                <div class="bg-amber-50 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-4">
+                        <h4 class="font-['Playfair_Display'] text-xl font-bold text-primary">Magtanim Ay Di Biro</h4>
+                        <button class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                            <i class="ri-play-fill"></i>
+                        </button>
+                    </div>
+                    <p class="text-gray-600 mb-4">A work song that depicts the hardships and dedication of Filipino farmers in the rice fields.</p>
+                    <div class="flex items-center gap-4 text-sm text-gray-500">
+                        <span class="flex items-center gap-1">
+                            <i class="ri-time-line"></i>
+                            3:45
+                        </span>
+                        <span class="flex items-center gap-1">
+                            <i class="ri-music-2-line"></i>
+                            Work Song
+                        </span>
+                    </div>
+                </div>
+
+                <div class="bg-amber-50 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group">
+                    <div class="flex items-center justify-between mb-4">
+                        <h4 class="font-['Playfair_Display'] text-xl font-bold text-primary">Tinikling</h4>
+                        <button class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                            <i class="ri-play-fill"></i>
+                        </button>
+                    </div>
+                    <p class="text-gray-600 mb-4">The musical accompaniment to the Philippines' national dance, mimicking the movements of the tikling bird.</p>
+                    <div class="flex items-center gap-4 text-sm text-gray-500">
+                        <span class="flex items-center gap-1">
+                            <i class="ri-time-line"></i>
+                            5:20
+                        </span>
+                        <span class="flex items-center gap-1">
+                            <i class="ri-music-2-line"></i>
+                            Dance Music
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="chord-charts" class="py-20 bg-gradient-to-b from-orange-50 to-amber-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-['Playfair_Display'] text-4xl font-bold text-primary mb-4">
+                    Chord Charts & Learning Resources
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Master the art of Rondalla music with our comprehensive chord charts and tutorials
+                </p>
+            </div>
+            <div class="bg-white rounded-3xl p-8 shadow-xl mb-12">
+                <div class="flex flex-wrap gap-2 mb-8 border-b border-gray-200">
+                    <button class="px-6 py-3 bg-primary text-white !rounded-button font-medium transition-all whitespace-nowrap" data-tab="bandurria">Bandurria</button>
+                    <button class="px-6 py-3 text-gray-600 hover:text-primary !rounded-button font-medium transition-all whitespace-nowrap" data-tab="laud">Laud</button>
+                    <button class="px-6 py-3 text-gray-600 hover:text-primary !rounded-button font-medium transition-all whitespace-nowrap" data-tab="octavina">Octavina</button>
+                    <button class="px-6 py-3 text-gray-600 hover:text-primary !rounded-button font-medium transition-all whitespace-nowrap" data-tab="guitar">Guitar</button>
+                </div>
+
+                <div class="tab-content" id="bandurria-content">
+                    <div class="grid lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="font-['Playfair_Display'] text-2xl font-bold text-primary mb-6">Bandurria Chord Chart</h3>
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div class="bg-amber-50 p-4 rounded-xl text-center">
+                                    <div class="text-2xl font-bold text-primary mb-2">Do</div>
+                                    <div class="text-sm text-gray-600">C Major</div>
+                                </div>
+                                <div class="bg-amber-50 p-4 rounded-xl text-center">
+                                    <div class="text-2xl font-bold text-primary mb-2">Re</div>
+                                    <div class="text-sm text-gray-600">D Major</div>
+                                </div>
+                                <div class="bg-amber-50 p-4 rounded-xl text-center">
+                                    <div class="text-2xl font-bold text-primary mb-2">Mi</div>
+                                    <div class="text-sm text-gray-600">E Major</div>
+                                </div>
+                                <div class="bg-amber-50 p-4 rounded-xl text-center">
+                                    <div class="text-2xl font-bold text-primary mb-2">Fa</div>
+                                    <div class="text-sm text-gray-600">F Major</div>
+                                </div>
+                                <div class="bg-amber-50 p-4 rounded-xl text-center">
+                                    <div class="text-2xl font-bold text-primary mb-2">Sol</div>
+                                    <div class="text-sm text-gray-600">G Major</div>
+                                </div>
+                                <div class="bg-amber-50 p-4 rounded-xl text-center">
+                                    <div class="text-2xl font-bold text-primary mb-2">La</div>
+                                    <div class="text-sm text-gray-600">A Major</div>
+                                </div>
+                                <div class="bg-amber-50 p-4 rounded-xl text-center">
+                                    <div class="text-2xl font-bold text-primary mb-2">Ti</div>
+                                    <div class="text-sm text-gray-600">B Major</div>
+                                </div>
+                                <div class="bg-amber-50 p-4 rounded-xl text-center">
+                                    <div class="text-2xl font-bold text-primary mb-2">Do</div>
+                                    <div class="text-sm text-gray-600">C Major (Octave)</div>
+                                </div>
+                            </div>
+                            <button class="w-full bg-secondary text-white py-3 !rounded-button font-semibold hover:bg-yellow-600 transition-colors whitespace-nowrap flex items-center justify-center gap-2">
+                                <div class="w-5 h-5 flex items-center justify-center">
+                                    <i class="ri-download-line"></i>
+                                </div>
+                                Download PDF Chart
+                            </button>
+                        </div>
+                        <div>
+                            <h3 class="font-['Playfair_Display'] text-2xl font-bold text-primary mb-6">Video Tutorial</h3>
+                            <div class="bg-gray-100 rounded-xl h-64 flex items-center justify-center mb-6">
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <i class="ri-play-fill text-white text-2xl"></i>
+                                    </div>
+                                    <p class="text-gray-600">Bandurria Basics Tutorial</p>
+                                </div>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-3 p-3 bg-amber-50 rounded-lg">
+                                    <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-sm font-bold">1</div>
+                                    <span class="text-gray-700">Proper holding technique</span>
+                                </div>
+                                <div class="flex items-center gap-3 p-3 bg-amber-50 rounded-lg">
+                                    <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-sm font-bold">2</div>
+                                    <span class="text-gray-700">Basic chord formations</span>
+                                </div>
+                                <div class="flex items-center gap-3 p-3 bg-amber-50 rounded-lg">
+                                    <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-sm font-bold">3</div>
+                                    <span class="text-gray-700">Strumming patterns</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <h4 class="font-['Playfair_Display'] text-xl font-bold text-primary mb-4">Bahay Kubo Chords</h4>
+                    <div class="text-sm text-gray-600 mb-4">
+                        <div class="mb-2"><strong>Verse:</strong> C - F - G - C</div>
+                        <div><strong>Chorus:</strong> F - C - G - C</div>
+                    </div>
+                    <button class="w-full bg-amber-100 text-primary py-2 !rounded-button font-medium hover:bg-amber-200 transition-colors whitespace-nowrap">
+                        Download Sheet
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <h4 class="font-['Playfair_Display'] text-xl font-bold text-primary mb-4">Leron Leron Sinta</h4>
+                    <div class="text-sm text-gray-600 mb-4">
+                        <div class="mb-2"><strong>Verse:</strong> G - D - G - C</div>
+                        <div><strong>Chorus:</strong> G - D - G - G</div>
+                    </div>
+                    <button class="w-full bg-amber-100 text-primary py-2 !rounded-button font-medium hover:bg-amber-200 transition-colors whitespace-nowrap">
+                        Download Sheet
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <h4 class="font-['Playfair_Display'] text-xl font-bold text-primary mb-4">Paru-Parong Bukid</h4>
+                    <div class="text-sm text-gray-600 mb-4">
+                        <div class="mb-2"><strong>Verse:</strong> F - C - G - C</div>
+                        <div><strong>Bridge:</strong> Am - F - G - C</div>
+                    </div>
+                    <button class="w-full bg-amber-100 text-primary py-2 !rounded-button font-medium hover:bg-amber-200 transition-colors whitespace-nowrap">
+                        Download Sheet
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-['Playfair_Display'] text-4xl font-bold text-primary mb-6">
+                        About Victoria Rondalla Ensemble
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Founded in 1985 in Victoria, Tarlac, our ensemble has been dedicated to preserving and promoting Filipino musical heritage for nearly four decades. We began as a small group of passionate musicians who shared a love for traditional Rondalla music and have grown into a respected cultural institution.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Our mission extends beyond performance – we are educators, cultural ambassadors, and guardians of Filipino musical traditions. Through workshops, school programs, and community performances, we ensure that the beautiful sounds of Rondalla music continue to resonate with new generations.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary mb-2">38+</div>
+                            <div class="text-gray-600">Years of Excellence</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary mb-2">500+</div>
+                            <div class="text-gray-600">Performances</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary mb-2">15</div>
+                            <div class="text-gray-600">Active Members</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary mb-2">1000+</div>
+                            <div class="text-gray-600">Students Taught</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://readdy.ai/api/search-image?query=Filipino%20rondalla%20ensemble%20group%20photo%20traditional%20musicians%20with%20bandurria%20laud%20octavina%20instruments%2C%20formal%20portrait%20in%20traditional%20Filipino%20clothing%2C%20warm%20professional%20lighting%2C%20cultural%20heritage%20documentation%2C%20group%20of%2015%20people%20arranged%20elegantly&width=600&height=600&seq=group-photo&orientation=squarish" 
+                         alt="Victoria Rondalla Ensemble" 
+                         class="rounded-2xl shadow-2xl object-cover w-full h-96">
+                    <div class="absolute -top-6 -left-6 w-24 h-24 bg-secondary/20 rounded-full flex items-center justify-center">
+                        <i class="ri-music-2-fill text-secondary text-3xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gradient-to-b from-amber-50 to-orange-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-['Playfair_Display'] text-4xl font-bold text-primary mb-4">
+                    Get in Touch
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Book our ensemble for your special events or inquire about our music education programs
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="bg-white rounded-3xl p-8 shadow-xl">
+                    <h3 class="font-['Playfair_Display'] text-2xl font-bold text-primary mb-6">Send us a Message</h3>
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">First Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Last Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea rows="5" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white py-4 !rounded-button font-semibold hover:bg-red-800 transition-colors whitespace-nowrap">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="bg-white rounded-2xl p-6 shadow-lg">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="ri-map-pin-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Our Location</h4>
+                                <p class="text-gray-600">Victoria Cultural Center<br>123 Heritage Street, Victoria, Tarlac<br>Philippines 2313</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6 shadow-lg">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="ri-phone-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Contact Information</h4>
+                                <p class="text-gray-600">Phone: +63 45 925 1234<br>Email: info@victoriarondalla.ph<br>Website: www.victoriarondalla.ph</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6 shadow-lg">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="ri-time-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Practice Schedule</h4>
+                                <p class="text-gray-600">Tuesday & Thursday: 7:00 PM - 9:00 PM<br>Saturday: 2:00 PM - 5:00 PM<br>Sunday: Performance Days</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-6 shadow-lg">
+                        <h4 class="font-bold text-gray-800 mb-4">Follow Us</h4>
+                        <div class="flex gap-4">
+                            <a href="#" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white hover:bg-red-700 transition-colors">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center text-white hover:bg-pink-700 transition-colors">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center text-white hover:bg-blue-500 transition-colors">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="font-['Pacifico'] text-2xl mb-4">Victoria Rondalla</div>
+                    <p class="text-red-200 mb-4">Preserving Filipino musical heritage through traditional Rondalla music since 1985.</p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                            <i class="ri-facebook-fill text-sm"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                            <i class="ri-youtube-fill text-sm"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                            <i class="ri-instagram-fill text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-red-200">
+                        <li><a href="#instruments" class="hover:text-white transition-colors">Instruments</a></li>
+                        <li><a href="#folk-songs" class="hover:text-white transition-colors">Folk Songs</a></li>
+                        <li><a href="#chord-charts" class="hover:text-white transition-colors">Chord Charts</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-red-200">
+                        <li><a href="#" class="hover:text-white transition-colors">Performance Bookings</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Music Workshops</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Private Lessons</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Cultural Events</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-red-200">
+                        <p class="flex items-center gap-2">
+                            <i class="ri-map-pin-line"></i>
+                            Victoria, Tarlac, Philippines
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <i class="ri-phone-line"></i>
+                            +63 45 925 1234
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <i class="ri-mail-line"></i>
+                            info@victoriarondalla.ph
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-red-800 mt-8 pt-8 text-center text-red-200">
+                <p>&copy; 2024 Victoria Rondalla Ensemble. All rights reserved. | Preserving Filipino Musical Heritage</p>
+            </div>
+        </div>
+    </footer>
+
+    <script id="navigation-scroll">
+        document.addEventListener('DOMContentLoaded', function() {
+            const nav = document.querySelector('nav');
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 100) {
+                    nav.classList.add('bg-white/98');
+                    nav.classList.remove('bg-white/95');
+                } else {
+                    nav.classList.add('bg-white/95');
+                    nav.classList.remove('bg-white/98');
+                }
+            });
+
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        const offsetTop = targetSection.offsetTop - 80;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script id="tab-functionality">
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('[data-tab]');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetTab = this.getAttribute('data-tab');
+                    
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('bg-primary', 'text-white');
+                        btn.classList.add('text-gray-600', 'hover:text-primary');
+                    });
+                    
+                    this.classList.add('bg-primary', 'text-white');
+                    this.classList.remove('text-gray-600', 'hover:text-primary');
+                    
+                    tabContents.forEach(content => {
+                        content.style.display = 'none';
+                    });
+                    
+                    const targetContent = document.getElementById(targetTab + '-content');
+                    if (targetContent) {
+                        targetContent.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script id="audio-controls">
+        document.addEventListener('DOMContentLoaded', function() {
+            const playButtons = document.querySelectorAll('.ri-play-fill');
+            
+            playButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const isPlaying = this.classList.contains('ri-pause-fill');
+                    
+                    playButtons.forEach(btn => {
+                        btn.classList.remove('ri-pause-fill');
+                        btn.classList.add('ri-play-fill');
+                    });
+                    
+                    if (!isPlaying) {
+                        this.classList.remove('ri-play-fill');
+                        this.classList.add('ri-pause-fill');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script id="mobile-menu">
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.querySelector('.md\\:hidden button');
+    const mobileMenu = document.createElement('div');
+    mobileMenu.className = 'md:hidden bg-white w-full fixed top-16 left-0 right-0 shadow-lg px-4 py-4 space-y-4 border-t border-amber-100 transform transition-all duration-300 ease-in-out -translate-y-full';
+    mobileMenu.style.display = 'none';
+    
+    const menuItems = [
+        {text: 'Instruments', href: '#instruments'},
+        {text: 'Folk Songs', href: '#folk-songs'},
+        {text: 'Chord Charts', href: '#chord-charts'},
+        {text: 'About Us', href: '#about'},
+        {text: 'Contact', href: '#contact'}
+    ];
+    
+    menuItems.forEach(item => {
+        const link = document.createElement('a');
+        link.href = item.href;
+        link.className = 'block py-3 px-4 text-gray-700 hover:bg-amber-50 hover:text-primary transition-colors rounded-lg font-medium';
+        link.textContent = item.text;
+        mobileMenu.appendChild(link);
+    });
+    
+    document.body.appendChild(mobileMenu);
+    
+    let menuOpen = false;
+    
+    mobileMenuButton.addEventListener('click', function() {
+        menuOpen = !menuOpen;
+        
+        if (menuOpen) {
+            mobileMenu.style.display = 'block';
+            setTimeout(() => {
+                mobileMenu.classList.remove('-translate-y-full');
+                mobileMenu.classList.add('translate-y-0');
+            }, 10);
+        } else {
+            mobileMenu.classList.remove('translate-y-0');
+            mobileMenu.classList.add('-translate-y-full');
+            setTimeout(() => {
+                mobileMenu.style.display = 'none';
+            }, 300);
+        }
+        
+        const icon = this.querySelector('i');
+        icon.className = menuOpen ? 'ri-close-line text-xl' : 'ri-menu-line text-xl';
+    });
+    
+    // Close menu when clicking on a link
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuOpen = false;
+            mobileMenu.classList.remove('translate-y-0');
+            mobileMenu.classList.add('-translate-y-full');
+            setTimeout(() => {
+                mobileMenu.style.display = 'none';
+            }, 300);
+            mobileMenuButton.querySelector('i').className = 'ri-menu-line text-xl';
+        });
+    });
+});
+</script>
+</body>
+</html>
